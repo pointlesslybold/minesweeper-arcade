@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "au-sans";
+	font-weight: 100, 200;
+	src: url("fonts/au-sans-light.woff2") format("woff2");
+}
+@font-face {
+	font-family: "au-sans";
+	font-weight: 300;
+	src: url("fonts/au-sans-regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "au-sans";
+	font-weight: 400, 500;
+	src: url("fonts/au-sans-bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "au-sans";
+	font-weight: 600, 700;
+	src: url("fonts/au-sans-black.woff2") format("woff2");
+}
+body{
+	font-family: "au-sans", Arial, sans-serif;
+}

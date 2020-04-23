@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./font.css">
+    <link rel="stylesheet" type="text/css" href="./common.css">
+    <link rel="shortcut icon" type="image/png" href="graphics/mine.png" />
+    <script src="./common.js" defer></script>
+    <title>Minesweeper for Web</title>
+    <meta name="description" content="A Web version of the classic game written in pure JS" />
+    <meta property="og:title" content="Minesweeper">
+    <meta property="og:description" content="A Web version of the classic game written in pure JS">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="scale-helper"></div>
+    <div class="notification-wrapper">
+        <div class="notification">
+            You Win
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="top-bar non-selectable">
+            <div class="logo-text">
+                Minesweeper
+            <a href="https://pointlesslybold.github.io/">Ultimate Champion Arcade Edition</a>
+            </div>
+            <div class="timer">
+                <div class="hint">Timer:</div>
+                <div class="digits">00:00</div>
+            </div>
+        </div>
+
+        <div class="options">
+            <div class="form">
+                <div class="hint">
+                    Grid:
+                </div>
+                <input type="text" class="option-field" id="grid-x" maxlength="3" placeholder="10" />
+                <div class="hint">
+                    by
+                </div>
+                <input type="text" class="option-field" id="grid-y" maxlength="3" placeholder="10" />
+                <div class="hint">
+                    Mines:
+                </div>
+                <input type="text" class="option-field" id="grid-mine" maxlength="3" placeholder="10" />
+            </div>
+
+            <div class="buttons">
+                <button class="option-button" id="start">New/Restart</button>
+                <button class="option-button greyed" id="stop">Stop</button>
+            </div>
+        </div>
+
+        <div class="grid-outer non-selectable">
+            <div class="grid">
+                <span class="to-start">
+                    To start a new game press "New/Restart". If you want to, you can set custom grid dimensions and mines quantity.
+                </span>
+            </div>
+        </div>
+
+        <div class="bottom-bar non-selectable">
+            <div class="scale-group">
+                <div class="hint">
+                    Scale:
+                </div>
+                <div class="toggles">
+                    <div class="variant" id="scaleXS">
+                        XS
+                    </div>
+                    <div class="variant" id="scaleS">
+                        S
+                    </div>
+                    <div class="variant" id="scaleM">
+                        M
+                    </div>
+                    <div class="variant" id="scaleL">
+                        L
+                    </div>
+                    <div class="variant" id="scaleXL">
+                        XL
+                    </div>
+                </div>
+            </div>
+
+            <button class="option-button greyed" id="get-hint">Hint (0/3)</button>
+        </div>
+    </div>
+</body>
+</html>
